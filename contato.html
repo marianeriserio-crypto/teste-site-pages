@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com a Mimo Pet. Envie uma mensagem, veja nossos horários e saiba como chegar.">
+  <title>Contato — Mimo Pet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+  <header class="site-header contact-header">
+    <a class="brand" href="index.html" aria-label="Mimo Pet, início">
+      <span class="brand-mark" aria-hidden="true">♥</span>
+      <span>Mimo<span>Pet</span></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html#servicos">Serviços</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#depoimentos">Depoimentos</a>
+      <a class="active" href="contato.html" aria-current="page">Contato</a>
+    </nav>
+    <a class="button button-small" href="index.html#agendamento">Agendar agora <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="contact-hero-copy">
+        <span class="kicker">VAMOS CONVERSAR?</span>
+        <h1>Um alô daqui,<br><em>uma cauda abanando dali.</em></h1>
+        <p>Tem alguma dúvida, pedido especial ou só quer conhecer melhor a Mimo? Manda uma mensagem. Nossa equipe responde com todo carinho.</p>
+      </div>
+      <div class="contact-hero-art" aria-hidden="true">
+        <span class="contact-bubble bubble-one">Au!</span>
+        <span class="contact-pet">🐶</span>
+        <span class="contact-bubble bubble-two">Miau!</span>
+        <span class="contact-paw">🐾</span>
+      </div>
+    </section>
+
+    <section class="contact-main section">
+      <div class="contact-details">
+        <span class="kicker">FALE COM A GENTE</span>
+        <h2>Estamos pertinho<br><em>quando você precisar.</em></h2>
+        <p>Escolha seu canal preferido. Para agendamentos, você também pode usar o formulário completo da página inicial.</p>
+        <div class="contact-list">
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+            <b>↗</b><span><small>WHATSAPP</small><strong>(11) 99999-9999</strong><em>Resposta rápida em horário comercial</em></span>
+          </a>
+          <a href="mailto:oi@mimopet.com.br">
+            <b>✉</b><span><small>E-MAIL</small><strong>oi@mimopet.com.br</strong><em>Conte tudo pra gente</em></span>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <b>♡</b><span><small>INSTAGRAM</small><strong>@mimopet</strong><em>Acompanhe a rotina da matilha</em></span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-topline"><span>DEIXE SUA MENSAGEM</span><span>✦</span></div>
+        <label><span>Seu nome</span><input type="text" name="name" placeholder="Como podemos te chamar?" required></label>
+        <label><span>Seu e-mail</span><input type="email" name="email" placeholder="voce@email.com" required></label>
+        <label><span>WhatsApp <small>(opcional)</small></span><input type="tel" name="contactPhone" placeholder="(11) 99999-9999"></label>
+        <label><span>Assunto</span>
+          <select name="subject" required>
+            <option value="">O que você precisa?</option>
+            <option>Dúvida sobre serviços</option>
+            <option>Agendamento</option>
+            <option>Hotelzinho</option>
+            <option>Elogio ou sugestão</option>
+            <option>Outro assunto</option>
+          </select>
+        </label>
+        <label><span>Sua mensagem</span><textarea name="message" rows="5" placeholder="Conte pra gente como podemos ajudar..." required></textarea></label>
+        <button class="button submit-button" type="submit">Enviar mensagem <span>→</span></button>
+        <p class="privacy">🔒 Seus dados estão seguros com a gente.</p>
+        <div class="form-success" id="contactSuccess" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="visit-section">
+      <div class="visit-map">
+        <div class="map-street street-one"></div><div class="map-street street-two"></div><div class="map-street street-three"></div>
+        <div class="map-park">PARQUINHO<br>DOS PETS</div>
+        <div class="map-pin"><span>♥</span><strong>MimoPet</strong></div>
+        <span class="map-paw paw-a">🐾</span><span class="map-paw paw-b">🐾</span>
+      </div>
+      <div class="visit-copy">
+        <span class="kicker light">VENHA NOS VISITAR</span>
+        <h2>Portas abertas<br><em>e potinhos cheios.</em></h2>
+        <div class="visit-info">
+          <div><small>ENDEREÇO</small><strong>Rua das Patinhas, 123<br>Vila Mariana — São Paulo, SP</strong></div>
+          <div><small>HORÁRIOS</small><strong>Segunda a sexta · 8h às 19h<br>Sábados · 9h às 17h</strong></div>
+        </div>
+        <a class="button mint-button" href="https://maps.google.com" target="_blank" rel="noreferrer">Abrir no mapa <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-cta">
+      <span aria-hidden="true">✦</span>
+      <div><p>JÁ SABE QUAL CUIDADO SEU PET PRECISA?</p><h2>Agende em poucos minutinhos.</h2></div>
+      <a class="button dark" href="index.html#agendamento">Fazer agendamento <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand brand-footer" href="index.html"><span class="brand-mark">♥</span><span>Mimo<span>Pet</span></span></a>
+    <p>Atendimento próximo. Produtos de qualidade.<br>Amor pelos pets.</p>
+    <div><a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">WhatsApp</a><a href="#">Instagram</a><a href="contato.html">Contato</a></div>
+    <small>© 2026 Mimo Pet. Feito com carinho e muitas patinhas.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
